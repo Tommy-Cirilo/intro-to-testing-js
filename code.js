@@ -26,9 +26,18 @@ function sayHello(input) {
     } else {
         return "Hello, " + input;
     }
-
-
 }
+
+
+function isFive(bool) {
+    if (bool === true){
+        return true;
+    } else {
+        return true;
+    }
+}
+
+
 
 
 

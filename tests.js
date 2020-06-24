@@ -49,12 +49,28 @@ describe("sayHello", function() {
         expect (sayHello ("Pat")).toBe("Hello, Pat");
     });
     it('should not return as undefined', function () {
-        expect(sayHello()).toBe("Hello, World");
+        expect(sayHello()).toBe("Boolean");
     });
     it("Hello, World should return with the boolean of true", function () {
         expect(sayHello(true)).toBe("Hello, World");
     });
 });
+
+
+
+describe("isFive", function () {
+    it('isFive should be a defined function', function () {
+        expect(typeof isFive).toBe("function");
+    });
+    it('should always return a boolean value of true', function () {
+        expect(isFive(true)).toBe(true);
+    });
+    it('should return true when the number 5 is passed', function () {
+        expect(isFive(5)).toBe(true);
+    });
+
+});
+
 
 
 
