@@ -42,15 +42,19 @@ describe("sayHello", function() {
     it("should return 'Hello, Jane'", function(){
         expect("Hello, Jane").toBe("Hello, Jane");
     });
+
     it("should return 'Hello, Alex'", function(){
         expect(sayHello ("Alex")).toBe("Hello, Alex");
     });
+
     it("should return 'Hello, Pat'", function () {
         expect (sayHello ("Pat")).toBe("Hello, Pat");
     });
-    it('should not return as undefined', function () {
-        expect(sayHello()).toBe("Boolean");
+
+    it('should return a boolean value', function () {
+        expect(sayHello()).toBe("boolean");
     });
+
     it("Hello, World should return with the boolean of true", function () {
         expect(sayHello(true)).toBe("Hello, World");
     });
